@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.pay-container {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e2e2e2 25%, #777373 75%);
+}
+
+.payment-page-container {
+  background: #dcdcdc;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.payment-page-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 19px;
+}
+
+.payment-options-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.payment-options-container button {
+  color: black;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.selected-option,
+.payment-options-container button:hover {
+  background-color: #999999;
+  color: white;
+}
+
+.card-details-form-container,
+.upi-details-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-details-form-container div,
+.upi-details-form-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-details-label,
+.upi-details-form-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.card-details-form-container input,
+.upi-details-form-container input {
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  max-width: 50%;
+  margin-left: 100px;
+}
+
+.card-details-form-container input:focus,
+.upi-details-form-container input:focus {
+  border-color: #4a4a4a;
+  outline: none;
+}
+
+.qr-code-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pay-button-container {
+  display: block;
+  width: 30%;
+  padding: 12px 0;
+  transition: background-color 0.3s ease;
+  margin-left: 270px;
+  color: white;
+  background-color: #4a4a4a;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.pay-button-container:hover {
+  background-color: #5c5c5c;
+  color: black;
+}

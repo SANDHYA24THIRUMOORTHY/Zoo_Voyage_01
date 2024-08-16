@@ -1,0 +1,102 @@
+/* General Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/337/481/82/deer-geometry-wireframe-artwork-wallpaper-preview.jpg");
+  animation: fadeIn 1s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover; /* or contain, depending on how you want to scale the image */
+  background-position: center; /* or top, bottom, left, right, etc. */
+  
+}
+
+.login-form {
+  background: rgba(199, 187, 187, 0.8); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  animation: scaleUp 0.5s ease-in-out;
+  margin-left: 790px;
+  
+
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333; /* Dark grey text */
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #888; /* Darker grey border on focus */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.login-button {
+  background-color: #4a4a4a; /* Dark grey background */
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+  background-color: #6e6e6e; /* Lighter grey on hover */
+  transform: scale(1.05);
+}
+
+.register-link, .login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link a, .login-link a {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover, .login-link a:hover {
+  color: #333; /* Darker grey on hover */
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

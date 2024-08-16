@@ -1,0 +1,218 @@
+/* Keyframes for animations */
+@keyframes flyIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Container Styles */
+.contact-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1; /* Light grey background */
+  color: #333; /* Dark grey text for contrast */
+  animation: flyIn 1s ease-out, fadeIn 1.5s ease-in;
+}
+
+.head {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  max-width: 700px;
+  background-color: #e0e0e0; /* Light grey background */
+  color: #333; /* Dark grey text for contrast */
+  animation: flyIn 1.2s ease-out;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 20px; /* Reduced padding */
+  border-radius: 8px; /* Adjusted curved corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+  background-color: #ffffff; /* White background for form */
+  color: #333; /* Dark grey text for contrast */
+  animation: popIn 1.5s ease-out;
+}
+
+.contact-form label {
+  font-size: 1em; /* Adjusted font size */
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555; /* Medium grey for labels */
+}
+
+.email-form-group input,
+.contact-form input,
+.contact-form textarea {
+  width: 80%; /* Reduced width */
+  max-width: 350px; /* Reduced maximum width */
+  padding: 8px; /* Reduced padding */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 6px; /* Adjusted curved corners */
+  font-size: 0.9em; /* Reduced font size */
+  color: #333; /* Dark grey text color */
+  background-color: #f9f9f9; /* Very light grey background for inputs */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.contact-form textarea {
+  width: 80%; /* Adjusted width */
+  max-width: 350px; /* Reduced maximum width */
+  padding: 8px; /* Reduced padding */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 6px; /* Adjusted curved corners */
+  font-size: 0.9em; /* Reduced font size */
+  color: #333; /* Dark grey text color */
+  background-color: #f9f9f9; /* Very light grey background for textarea */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa; /* Grey placeholder text */
+}
+
+.email-form-group input:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #888; /* Medium grey border on focus */
+  outline: none;
+}
+
+.contact-button {
+  width: 30%;
+  padding: 10px;
+  color: #fff; /* White text color */
+  background-color: #333; /* Dark grey background for buttons */
+  border: none;
+  border-radius: 8px; /* Adjusted curved corners */
+  font-size: 15px; /* Reduced font size */
+  cursor: pointer;
+  align-self: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.contact-button:hover {
+  background-color: #555; /* Slightly lighter grey on hover */
+}
+
+.contact-info {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #f7f7f7; /* Very light grey background */
+  color: #333; /* Dark grey text for contrast */
+  animation: flyIn 1.6s ease-out, fadeIn 2s ease-in;
+}
+
+.contact-info h5 {
+  font-size: 1.6em; /* Reduced font size */
+  color: #444; /* Darker grey for headers */
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1em; /* Reduced font size */
+  color: #666; /* Medium grey for paragraph text */
+  margin: 5px 0;
+}
+
+/* Social Media Section */
+.social-media {
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+.social-media h5 {
+  font-size: 1.6em; /* Reduced font size */
+  color: #333; /* Dark grey for social media headers */
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center logos horizontally */
+  gap: 15px; /* Space between logos */
+  animation: fadeIn 2s ease-in;
+}
+
+.social-icons a {
+  display: inline-block; /* Ensures logos are inline */
+}
+
+.facebook img,
+.twitter img,
+.instagram img {
+  animation: popIn 1.8s ease-out;
+}
+
+.facebook img {
+  width: 80px; /* Reduced width */
+  height: 50px; /* Adjusted height */
+}
+
+.twitter img {
+  width: 90px; /* Reduced width */
+  height: 45px; /* Adjusted height */
+}
+
+.instagram img {
+  width: 75px; /* Reduced width */
+  height: 45px; /* Adjusted height */
+}
+
+.Z {
+  color: #333; /* Dark grey text color */
+}
+
+.f {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1; /* Light grey background */
+  color: #333; /* Dark grey text for contrast */
+  animation: flyIn 1.8s ease-out, fadeIn 2s ease-in;
+}
+
+.toemail::placeholder {
+  color: #aaa; /* Grey placeholder text */
+}
+
+.email-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

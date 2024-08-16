@@ -1,0 +1,191 @@
+.book-form {
+  font-family: 'Arial', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 35px;
+}
+
+.book-form__page {
+  max-width: 800px;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.book-form__page p {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.book-form__date-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.book-form__date-selector input[type="date"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 200px;
+  background-color: #fff;
+}
+
+.book-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between form sections */
+}
+
+.book-form__table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between rows */
+  width: 100%;
+}
+
+.book-form__row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e9ecef; /* Background color for rows */
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners for rows */
+  transition: background-color 0.3s;
+  border: 1px solid #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Start as hidden */
+  animation: fadeInSlideUp 0.5s forwards; /* Apply fade-in slide-up animation */
+}
+
+.book-form__row:hover {
+  background-color: #dee2e6; /* Lighter grey on hover */
+}
+
+.book-form__row:nth-child(odd) {
+  background: linear-gradient(to right, #e9ecef, #f1f3f5); /* Gradient for odd rows */
+}
+
+.book-form__row:nth-child(even) {
+  background: linear-gradient(to right, #f1f3f5, #e9ecef); /* Gradient for even rows */
+}
+
+.book-form__row + .book-form__row {
+  margin-top: 10px; /* Space between rows */
+}
+
+.book-form__cell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-form__quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-form__quantity-control button {
+  padding: 8px 12px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #adb5bd; /* Light grey for buttons */
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.book-form__quantity-control button:hover {
+  background-color: #c0c4bc; /* Darker grey on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.book-form__quantity-control button:hover {
+  background-color: #c0c4bc; /* Darker grey on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.book-form__quantity-control span {
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.book-form__add-ons {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-form__add-ons h6 {
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.book-form__add-on {
+  display: flex;
+  align-items: center;
+  background-color: #e9ecef; /* Background color for add-ons */
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners for add-ons */
+  transition: background-color 0.3s;
+  justify-content: center;
+  border: 1px solid #282020;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Start as hidden */
+  animation: fadeInSlideUp 0.5s forwards; /* Apply fade-in slide-up animation */
+}
+
+
+
+.book-form__add-on + .book-form__add-on {
+  margin-top: 10px; /* Space between add-ons */
+}
+
+.book-form__add-on input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.book-form__next-button {
+  padding: 12px 24px;
+  color: white;
+  background-color: #495057;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.book-form__next-button:hover {
+  background-color: #6c757d;
+}
+
+/* Keyframes for fade-in and slide-up animation */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+.check_box
+{
+  height: 15px;
+  width: 16px;
+}
+.check_box:hover{
+  height: 17px;
+}

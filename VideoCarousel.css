@@ -1,0 +1,64 @@
+/* Keyframes for roll-in effect */
+@keyframes roll-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(10%) rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+/* Container for the carousel */
+.video-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+  background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600");
+  
+}
+
+/* Individual carousel items */
+.carousel-item {
+  width: 30%; /* Adjust as needed for your layout */
+  height: 400px; /* Fixed height for consistency */
+  overflow: hidden; /* Ensure content stays within borders */
+  position: relative;
+  opacity: 0; /* Start hidden */
+  transform: translateX(-100%) rotate(-120deg); /* Start off-screen and rotated */
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/* Image within the carousel item */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the container */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Roll-in animation for carousel items */
+.carousel-item.roll-in {
+  animation: roll-in 1s forwards ease-in-out;
+}
+
+/* Hover effect for images */
+.carousel-item:hover img {
+  transform: scale(1.05); /* Scale image on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for 3D effect */
+}
+.hvideo
+{
+  text-align: center;
+  color: black;
+  height: 70px;
+  background-color: rgb(146, 151, 151);
+  padding-top: 15px;
+  font-size: 30px;
+}

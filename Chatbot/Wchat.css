@@ -1,0 +1,150 @@
+/* Basic styling for chat page */
+.chat-page {
+  background-image: url("https://t3.ftcdn.net/jpg/02/02/17/98/360_F_202179808_o2YPAXShv0rdjQSso7mqOqSprYAvhKEM.jpg");
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the background image */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+/* Chat container styling */
+.chat-container {
+  max-width: 500px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat box styling */
+.chat-box {
+  background-image: url("https://as1.ftcdn.net/v2/jpg/06/22/74/68/1000_F_622746859_cXHdOtRmWcDqW5AU849pjvqxqi5HZ9eS.jpg");
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center;
+  padding: 15px;
+  height: 400px;
+  overflow-y: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Chat message styling */
+.chat-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  width: fit-content;
+  max-width: 75%;
+  animation: slideIn 0.5s ease-out;
+}
+
+.chat-message.bot {
+  background-color: white; 
+  color: #333;
+  align-self: flex-start;
+}
+
+.chat-message.user {
+  background-color: rgb(155, 255, 253); /* Light green with a hint of yellow */
+  color: rgb(3, 3, 2);
+  align-self: flex-end;
+  margin-left: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Options styling */
+.options {
+  margin-top: 10px;
+}
+
+.option-button {
+  background-color: #0486f1; /* WhatsApp-like blue */
+  border: none;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.option-button:hover {
+  background-color: #838487; /* Darker blue on hover */
+}
+
+/* Chat input container styling */
+.chat-input-container {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  background-color: #ffffff;
+}
+
+/* Input field styling */
+.chat-input-container input[type="text"],
+.chat-input-container input[type="date"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+  outline: none;
+  background-color: #f0f0f0;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Send button styling */
+.chat-input-container button {
+  background-color: #34b7f1; /* WhatsApp-like blue */
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.chat-input-container button:hover {
+  background-color: #0078d4; /* Darker blue on hover */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

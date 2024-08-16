@@ -1,0 +1,104 @@
+/* General Container Styling */
+.prof-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0e0e0; /* Light grey background */
+}
+
+.profile-container {
+  background-color: #d3d3d3; /* Mild grey */
+  color: #333333; /* Darker text color */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title Styling */
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2f2f2f; /* Dark grey for title */
+  animation: slideInTop 0.8s ease-in-out;
+}
+
+/* Table Styling */
+.profile-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+  animation: zoomIn 0.8s ease-in-out;
+}
+
+.profile-table td {
+  padding: 12px;
+  vertical-align: middle;
+}
+
+.profile-table input[type="text"],
+.profile-table input[type="email"],
+.profile-table input[type="tel"],
+.profile-table input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999999; /* Medium grey border */
+  border-radius: 5px;
+  background-color: #f7f7f7; /* Lighter grey background */
+  color: #2e2e2e; /* Darker text color */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight inner shadow */
+  animation: popIn 0.8s ease-in-out;
+}
+
+/* Button Styling */
+.profile-table button {
+  background-color: #b0b0b0; /* Medium grey */
+  color: #2f2f2f; /* Darker text color */
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  animation: slideInBottom 0.8s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Mild shadow */
+}
+
+.profile-table button:hover {
+  background-color: #a0a0a0; /* Slightly darker grey on hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Darker shadow on hover */
+}
+
+/* Column Header Styling */
+.col {
+  color: #555555; /* Darker grey */
+  font-weight: bold;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideInTop {
+  0% { transform: translateY(-100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInBottom {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

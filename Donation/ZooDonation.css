@@ -1,0 +1,136 @@
+/* ZooDonation.css */
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+
+.donation-page {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e2e2e2 25%, #7e7171 75%);
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: scrollBackground 10s linear infinite, fadeIn 1s ease-in-out;
+  overflow: hidden;
+}
+
+.donation-form {
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1), inset 0 -4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border 0.3s ease;
+  transform: translateY(-20px);
+  animation: slideIn 1s ease-out;
+  margin-left: 450px;
+}
+
+.donation-form:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), inset 0 -6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  border: 2px solid rgba(65, 63, 64, 0.5);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select,
+textarea,
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+  border-color: #494848;
+  box-shadow: 0 0 5px rgba(142, 137, 140, 0.5);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-button {
+  background-color: #6c757d;
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.submit-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.submit-button:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.submit-button:hover {
+  background-color: #ced4da;
+  transform: scale(1.05);
+  color: black;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.don{
+  color:#3d3c3c;
+}

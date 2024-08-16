@@ -1,0 +1,158 @@
+/* Container for the whole page */
+.ticket-booking-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1; /* Light grey background */
+  color: #333; /* Dark grey text for contrast */
+  font-family: Arial, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+  position: relative; /* To manage absolute positioning within the container */
+  padding-top: 60px; /* Space for fixed header */
+}
+
+/* Header styling */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure header is above other content */
+}
+
+/* Header title */
+.header-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+  padding-left: 600px;
+}
+
+/* Try Bot button */
+.try-bot-btn {
+  background-color: #555; /* Medium grey */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.try-bot-btn:hover {
+  background-color: #333; /* Dark grey on hover */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Each step's container */
+.step-content {
+  animation: fadeIn 0.8s ease-in-out;
+  padding: 20px;
+  background-color: #fff; /* White background for each step */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Step headings */
+.step-heading {
+  font-size: 2rem;
+  color: #555; /* Slightly darker grey */
+  margin-bottom: 15px;
+}
+
+/* Paragraphs explaining each step */
+.step-description {
+  font-size: 1.2rem;
+  color: #666; /* Medium grey for paragraph text */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* QR code image styling */
+.qr-code-image {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  animation: popIn 1s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: #555; /* Medium grey */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:disabled {
+  background-color: #ccc; /* Light grey when disabled */
+  cursor: not-allowed;
+}
+
+.nav-button:hover:not(:disabled) {
+  background-color: #333; /* Dark grey on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .ticket-booking-wrapper {
+    padding: 10px;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  .step-heading {
+    font-size: 1.6rem;
+  }
+
+  .step-description {
+    font-size: 1rem;
+  }
+
+  .qr-code-image {
+    width: 150px;
+    height: 150px;
+  }
+}

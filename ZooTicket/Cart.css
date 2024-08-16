@@ -1,0 +1,120 @@
+.cart {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 35px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.cart-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+
+.cart-page p {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  animation: rollIn 1s ease-out; /* Roll-in animation for each item */
+}
+
+.cart-item h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #4A0A1A;
+}
+
+.tickets, .add-ons {
+  margin-bottom: 10px;
+}
+
+.ticket-detail, .add-on-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.ticket-detail:hover, .add-on-detail:hover {
+  background-color: #e0f7fa; /* Light blue background on hover */
+  transform: translateX(10px); /* Slight shift on hover */
+}
+
+.item-total {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.cart-total {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.cart-total h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4A0A1A;
+}
+
+.clear-cart, .pay-button {
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.clear-cart {
+  background-color: #696667;
+}
+
+.clear-cart:hover {
+  background-color: #9d989a;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  color: black;
+}
+
+.pay-button {
+  background-color:  #696667;
+}
+
+.pay-button:hover {
+  background-color: #7f8081;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+@keyframes rollIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

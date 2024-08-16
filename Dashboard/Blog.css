@@ -1,0 +1,47 @@
+.up-button
+{
+  border-color: 1px solid black;
+  background-color: #66666e;
+  color: white;
+  height: 35px;
+  width: 90px;
+
+
+}
+.nav-link {
+  animation: linkFadeIn 1s ease-out;
+}
+
+/* Keyframes for link fade-in animation */
+@keyframes linkFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animated-toolbar {
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+
+.nav-link {
+  animation: bounce 1s infinite;
+}
+
+/* Define your keyframes for animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+

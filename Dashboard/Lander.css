@@ -1,0 +1,368 @@
+/* Lander.css */
+
+/* General Styles */
+.landing-page {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Header styling */
+.header-lander {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(205, 201, 201, 0.5);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+  height: 72px;
+}
+
+
+.zoovoyage {
+  text-align: center;
+  margin-left: 400px;
+  color: white;
+ 
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.header-button {
+  background-color: #555;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20%;
+}
+
+.header-button:hover {
+  background-color: rgb(162, 157, 157);
+  color: black;
+}
+
+/* Background image styling */
+.background-image {
+  padding-top: 100px;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(124, 123, 123);
+  text-align: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.text-content-land h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.text-content-land p {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Carousel controls styling */
+.carousel-controls {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.carousel-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Image slider styling */
+.image-slider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 800px;
+}
+
+.slider-image {
+  width: 150px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slider-image.active {
+  transform: scale(1.2);
+}
+
+.image-description {
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Styling for the details-content section */
+.details-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+  background-color: rgb(152, 152, 148);
+}
+
+.details-header {
+  background-color: rgb(230, 227, 227);
+}
+
+.round-image-container {
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.round-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.round-image-container:hover .round-image {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.round-image-container p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.details-header h2 {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+/* Footer styling */
+.footer-l {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-l p {
+  margin: 5px 0;
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #8a8989;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 300px; /* Adjust the width as needed */
+  animation: fadeIn 1s ease-in;
+  animation: slideIn 0.5s ease-out;
+}
+
+.close-button-r {
+  position: absolute;
+  top: 1px;
+  right: 12px;
+  color: #1b1919;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.close-button-r:hover
+{
+   background-color: #888;
+}
+
+/* Login and Register Forms */
+.login-container, .register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0e0e0; /* Light grey background */
+}
+
+.login-form, .register-form {
+  background: #f8f8f8; /* Very light grey */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.login-form h2, .register-form h2 {
+  color: #333; /* Dark grey text */
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #373030;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #888; /* Medium grey */
+  outline: none;
+}
+
+.login-button, .register-button {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  background-color: #555; /* Grey button */
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: #333; /* Darker grey on hover */
+}
+
+.register-link, .login-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link p, .login-link p {
+  margin: 0;
+  color: #1e1c1c; /* Medium grey */
+}
+
+.register-link span, .login-link span {
+  color: #0f1010; /* Blue for link */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.register-link span:hover, .login-link span:hover {
+  color: #0c0c0c; /* Darker blue on hover */
+}
+.zoovoyage{
+  font-size: 25px;
+  color: black;
+}
+.lander-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f7f7f7; /* Light grey background */
+}
+
+.info-box {
+  flex: 1;
+  margin: 15px;
+  padding: 20px;
+  background-color: #8d7f7f; /* Slightly darker grey */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box h2 {
+  margin-bottom: 15px;
+  color: #fcf7f7;
+}
+
+.info-box p {
+  color: #f3f3f3;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
